@@ -7,6 +7,7 @@ Class._Class.__attribute
  
 WSGI -> protocolo python 
 
+virtualenvwrapper
 # workon virtual_env_name
 
 factories (callables) -> funcao que recebe um objeto e o devolve modificado
@@ -40,3 +41,17 @@ Funcao vazia no python3:
 ... -> elipses !=  pass - NOOPS
 
 
+#Gerenciamento de filas
+python-rq
+dramatiq
+celery - too complex, for now.
+
+
+#Make a package installable
+Precisa editar o setup.py
+
+roda - pip install . na mesma pasta do setup.py
+roda - pip install -e . => modo editavel. Faz com que modificacoes sejam refletidas no pacote instalado, em realtime.
+sendo necessario instalar apenas uma vez durante o desenvolvimento
+roda - pip install -e .["dev"] -> alem do install_requires, instala tambem os pacotes listados no extras_require "dev"
+version="0.1.0" # major, minor, patch
