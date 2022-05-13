@@ -1,0 +1,20 @@
+Python -m http.server
+
+Class:
+	__attribute
+
+Class._Class.__attribute
+ 
+WSGI -> protocolo python 
+
+# workon virtual_env_name
+
+factories (callables) -> funcao que recebe um objeto e o devolve modificado
+-> factories vao alterando o objeto como se estivessem em um esteira de producao, onde cada factory adiciona propriedades novas ao objeto ate que
+ele saia no final da esteira
+
+Em projetos Flask (exluindo ambientes de teste) -> nunca fazer "import app"
+
+isort -> pacote para deixar imports na ordem correta
+
+black -> ajudar a melhorar a formatacao do codigo
