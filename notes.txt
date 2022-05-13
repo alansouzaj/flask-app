@@ -18,3 +18,25 @@ Em projetos Flask (exluindo ambientes de teste) -> nunca fazer "import app"
 isort -> pacote para deixar imports na ordem correta
 
 black -> ajudar a melhorar a formatacao do codigo
+
+*** flask - application out of context ***
+# Contextos
+
+## 1 Configuracao
+
+fase onde sao chamadas as factories, seta as configs, add hooks, etc
+
+## 2 App Context
+fase onde chama o flask run
+pode executar testes, debug, hooks, etc
+
+## 3 Request Context
+onde e` feito o request. O flask cria uma thread separada para cada request, apos o retorno status da requisicao essa thread e` encerrada.
+Apenas nesse contexto, geralmente nas factories das views, pode-se usar os objetos request e session.
+Geralmente esse contexto dura microssegundos. O tempo entre o usuario fazer a requisicao e o server retornar a resposta.
+
+
+Funcao vazia no python3:
+... -> elipses !=  pass - NOOPS
+
+
