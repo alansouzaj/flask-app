@@ -1,4 +1,0 @@
-ipython
-ipdb
-flask
-flask-sqlalchemy
